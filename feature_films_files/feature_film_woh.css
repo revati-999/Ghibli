@@ -1,0 +1,271 @@
+#main_poster{
+ 
+    height:800px;
+    margin-top:16px;
+    background-image: url('../images/Feature_Films_main_page/boyandheron.jpg');
+    width:100%;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.container-fluid{
+    margin-top:13px;
+}
+
+#main_collab{
+    /* border:1px solid salmon; */
+    height:400px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.main_collabs{
+    /* border:1px solid red; */
+    height:280px;
+    width:100%;
+    margin:90px 80px 100px;
+}
+
+
+
+/********************************************FEATURE FILMS********************************************/
+
+#feature-films{
+    margin-top:26px;
+    height:460px;
+    width:100%;
+    /* border:1px solid red; */
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.heading {
+    /* background-image: url('images/Char_designs/woh2.jpg'); */
+    width: 100%;
+    height: 100%;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    position:relative;
+    box-shadow: (3px 4px 2px 1px red);
+}
+
+.heading img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index:3;
+}
+
+/******BLURR BACKG OF IMG****/
+
+.heading::before{
+    content: '';
+    width:100%;
+    height:100%;
+    position:absolute;
+
+    /* background-color:rgb(219, 218, 218); */
+    backdrop-filter: blur(20px);
+    z-index:-1;
+    opacity:0.9;
+}
+
+.intro_para_img{
+    margin:60px 240px 60px;
+    font-size:20px;
+    /* border:1px solid pink;   */
+    line-height: 2;
+}
+
+#trailer-heading{
+    margin-left:60px;
+}
+
+#trailer{
+    /* border:1px solid red; */
+    margin:30px 100px 40px;
+    padding:30px;
+    display: inline-block; 
+}
+
+.video{
+    /* border:1px solid pink; */
+    padding:15px 30px 30px;
+}
+
+/***********************************CHARACTER DESIGN***************************************/
+
+#char-design{
+    /* border:2px solid yellow; */
+    height:560px;
+    width:100%;
+    background-image: url('../images/Char_designs/woh/woh_char_design.jpg');
+    max-width: 100%;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*******************PARALLEX EFFECTS*****************/
+    background-attachment:fixed;
+}
+
+
+#char_design_heading{
+    /* border:1px solid blueviolet; */
+    position:relative;
+    color:white;
+    text-align:center;
+    z-index: 1;
+    top:240px;
+    font-family: "Roboto", sans-serif;
+    font-size: 41px;
+    letter-spacing: 1rem;
+    text-shadow: 4px 2px 2px rgba(0, 0, 0, 0.308); /* Add a text shadow for a 3D effect */
+ }
+
+ #char_design_woh{
+    /* margin:60px 240px 60px; */
+    /* border:1px solid salmon; */
+    height:4400px;
+ }
+
+.grid_heading h2{
+    margin:120px 188px 60px; 
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+}
+
+.grid_brief{
+    margin:60px 188px 60px; 
+    font-size:20px;
+    line-height: 2;
+}
+
+/* .shizuku_flex{
+    border:1px solid pink;  
+    margin:60px 188px 60px; 
+    height:440px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items:center;
+}
+.shizukus{
+    height:200px;
+    width:23%;
+    border:1px solid blue;
+} */
+
+.grid-container{
+    display:grid;
+    margin:60px 188px 60px; 
+    height:440px;
+    /* gap: 9px 24px; */
+    row-gap:24px;
+    column-gap:24px;
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-rows: auto; */
+}
+
+.grid-item{
+    /* border:1px solid red; */
+    height:210px;
+    box-shadow: 2px 2px 2px rgb(160, 160, 160);
+}
+
+
+/***************Customizing grid for Seiji for all 4 items instead of 8************/
+.grid-container_seiji{
+    display:grid;
+    margin:60px 188px 60px; 
+    height:220px;
+    /* gap: 9px 24px; */
+    row-gap:24px;
+    column-gap:24px;
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-rows: auto; */
+}
+
+/* .grid-item_seiji{
+    /* border:1px solid red;
+    height:110px;
+    box-shadow: 2px 2px 2px rgb(160, 160, 160); 
+} */
+.grid-img{
+    width:100%;
+    height:100%;
+    
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+/**************************************FOOOTER CSS*******************************************/
+footer{
+    /* border:1px solid slateblue; */
+    height:280px;
+}
+
+#footer_icons{
+    /* border:1px solid purple; */
+    height:25px;
+    margin-top:180px;
+    display:flex;
+    justify-content: center;
+}
+
+.fa-brands{
+    padding:10px;
+    text-align: center;
+}
+
+#foot{
+margin-top:30px;
+}
+
+.footer_info{
+    /* border:1px solid gold; */
+    height:50px;
+    text-align: center;
+    text-decoration: underline;
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: center; 
+    
+}
+
+.footer_para{
+    padding:10px;
+    font-size:14px;
+    color:rgb(78, 78, 78);
+    letter-spacing: 2px;
+    margin-top:1%;
+    text-align: center;
+}
+
+.divider::before{
+    position:relative;
+    content: "|";
+    padding-top:8%;
+    /* vertical-align: middle; */
+}
+
+#footer_last{
+    letter-spacing: 1px;
+    margin-top:20px;
+    text-align:center;
+    color:rgb(78, 78, 78);
+}
